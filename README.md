@@ -1,15 +1,15 @@
 # IP
 1> 
-import cv2 as c
-import numpy as np
-from PIL import Image
-array=np.zeros([100,200,3],dtype=np.uint8)
-array[:,:100]=[255,130,0]
-array[:,100:]=[0,0,255]
-img=Image.fromarray(array)
-img.save('image1.png')
-img.show()
-c.waitKey(0)
+ import cv2 as c
+ import numpy as np
+ from PIL import Image
+ array=np.zeros([100,200,3],dtype=np.uint8)
+  array[:,:100]=[255,130,0]
+ array[:,100:]=[0,0,255]
+ img=Image.fromarray(array)
+ img.save('image1.png')
+ img.show()
+ c.waitKey(0)
 -------------------------------------------
 2>
 import cv2 
