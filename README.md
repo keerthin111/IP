@@ -1,53 +1,57 @@
 # IP
-1> 
- import cv2 as c
- import numpy as np
- from PIL import Image
- array=np.zeros([100,200,3],dtype=np.uint8)
-  array[:,:100]=[255,130,0]
- array[:,100:]=[0,0,255]
- img=Image.fromarray(array)
- img.save('image1.png')
- img.show()
- c.waitKey(0)
+1> <br>
+ import cv2 as c <br>
+ import numpy as np <br>
+ from PIL import Image <br>
+ array=np.zeros([100,200,3],dtype=np.uint8) <br>
+  array[:,:100]=[255,130,0] <br>
+ array[:,100:]=[0,0,255] <br>
+ img=Image.fromarray(array) <br>
+ img.save('image1.png') <br>
+ img.show() <br>
+ c.waitKey(0) <br>
 -------------------------------------------
-2>
-import cv2 
-img=cv2.imread("D:\plant.jpg")
-gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
-lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB)
-hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS)
-yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV)
-cv2.imshow("GRAY image",gray)
-cv2.imshow("HSV image",hsv)
-cv2.imshow("LAB image",lab)
-cv2.imshow("HLS image",hls)
-cv2.imshow("YUV image",yuv)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-OUTPUT:
-![image](https://user-images.githubusercontent.com/97940146/175283294-6c919061-6bc5-4028-9be5-9e4781eea7bb.png)
+2><br>
+import cv2 <br>
+img=cv2.imread("D:\plant.jpg") <br>
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) <br>
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV) <br>
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB) <br>
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS) <br>
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV) <br>
+cv2.imshow("GRAY image",gray) <br>
+cv2.imshow("HSV image",hsv) <br>
+cv2.imshow("LAB image",lab) <br>
+cv2.imshow("HLS image",hls) <br>
+cv2.imshow("YUV image",yuv) <br>
+cv2.waitKey(0) <br>
+cv2.destroyAllWindows() <br>
+OUTPUT: <br>
+![image](https://user-images.githubusercontent.com/97940146/175283294-6c919061-6bc5-4028-9be5-9e4781eea7bb.png) <br>
 
-16>
-#importing laibraries
-import cv2 
-import numpy as np
-image=cv2.imread('img4.jpg')
-cv2.imshow('original Image',image)
-cv2.waitKey(0)
-#Gaussian Blur
-Gaussian=cv2.GaussianBlur(image,(7,7),0)
-cv2.imshow('Gaussian Blurring',Gaussian)
-cv2.waitKey(0)
-#Median Blur
-median=cv2.medianBlur(image,5)
-cv2.imshow('Median Blurring',median)
-cv2.waitKey(0)
-#Bilateral Blur
-bilateral=cv2.bilateralFilter(image,9,75,75)
-cv2.imshow('Bilateral Blurring',bilateral)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
-OUTPUT:
+16> <br>
+#importing laibraries <br>
+import cv2 <br>
+import numpy as np <br>
+image=cv2.imread('img4.jpg') <br>
+cv2.imshow('original Image',image) <br>
+cv2.waitKey(0) <br>
+#Gaussian Blur <br>
+Gaussian=cv2.GaussianBlur(image,(7,7),0) <br>
+cv2.imshow('Gaussian Blurring',Gaussian) <br>
+cv2.waitKey(0) <br>
+#Median Blur <br>
+median=cv2.medianBlur(image,5) <br>
+cv2.imshow('Median Blurring',median) <br>
+cv2.waitKey(0) <br>
+#Bilateral Blur <br>
+bilateral=cv2.bilateralFilter(image,9,75,75) <br>
+cv2.imshow('Bilateral Blurring',bilateral) <br>
+cv2.waitKey(0) <br>
+cv2.destroyAllWindows() <br>
+OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940146/176418191-b58c2d06-d645-469e-8387-4f3afe742021.png)
+![image](https://user-images.githubusercontent.com/97940146/176418440-49580f3b-2874-4f2c-a097-7d87891ac43b.png)
+![image](https://user-images.githubusercontent.com/97940146/176418576-fa96a001-8717-4506-be67-e5a4f099fbec.png)
+![image](https://user-images.githubusercontent.com/97940146/176418704-2ad4d843-599b-4ea3-87f4-eb27c46e9b17.png)
+
