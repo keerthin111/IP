@@ -29,6 +29,7 @@ img.show()   <br>
 cv2.waitKey(0)   <br>
 cv2.destoryAllWindows()  <br>
 output: 
+![image](https://user-images.githubusercontent.com/97940146/178471987-bf48b1e8-0b00-4480-bc2d-6511522b5a6c.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 4>.Develop a program to convert color string to RGB color value  <br>
