@@ -11,11 +11,15 @@ output:  <br>
 
 2>.Develop a program to display image using matplotlib  <br>
 
-import matplotlib.image as mping 
-import matplotlib.pyplot as plt
-img=mping.imread('butterfly.jpg')
-plt.imshow(img)
+import matplotlib.image as mping  <br>
+import matplotlib.pyplot as plt  <br>
+img=mping.imread('butterfly.jpg')  <br>
+plt.imshow(img)  <br>
+
+output: <br>
 <matplotlib.image.AxesImage at 0x1ef8305fbe0>
+![image](https://user-images.githubusercontent.com/97940146/178466748-befa1ba2-7a3a-464c-852a-692573a74175.png)
+
 
 1> <br>
  import cv2 as c <br>
