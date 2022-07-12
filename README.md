@@ -1,4 +1,5 @@
-# IP
+# Image processing
+
 1>. Develop the program to display grayscale image <br>
  <br>
 import cv2   <br>
@@ -47,6 +48,7 @@ from PIL import Image  <br>
 img=Image.new('RGB',(200,400),(255,255,0))  <br>
 img.show()  <br>
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 6.Program to visualize images using varoius volor spaces
 
 import cv2
@@ -62,10 +64,9 @@ img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 plt.imshow(img)
 plt.show()
 
-image
-image
-image
+![image](https://user-images.githubusercontent.com/97940146/178469962-e3d839b4-c1d0-4807-8486-b05eefd91eb7.png)
 
+-------------------------------------------------------------------------------------------------------------------------------------
 7.Program to display image attributes
 
 from PIL import Image
@@ -84,7 +85,7 @@ Mode: RGB
 Size: (263, 300)
 Width: 263
 Height: 300
-
+------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 1> <br>
