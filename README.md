@@ -47,7 +47,43 @@ from PIL import Image  <br>
 img=Image.new('RGB',(200,400),(255,255,0))  <br>
 img.show()  <br>
 
+6.Program to visualize images using varoius volor spaces
 
+import cv2
+import matplotlib.pyplot as plt
+import numpy as np
+img=cv2.imread('flower2.webp')
+plt.imshow(img)
+plt.show()
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+plt.imshow(img)
+plt.show()
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
+plt.imshow(img)
+plt.show()
+
+image
+image
+image
+
+7.Program to display image attributes
+
+from PIL import Image
+image=Image.open('flower2.webp')
+print("FileName:",image.filename)
+print("Format:",image.format)
+print("Mode:",image.mode)
+print("Size:",image.size)
+print("Width:",image.width)
+print("Height:",image.height)
+
+OUTPUT:
+FileName: flower2.webp
+Format: WEBP
+Mode: RGB
+Size: (263, 300)
+Width: 263
+Height: 300
 
 
 
