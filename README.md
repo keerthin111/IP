@@ -65,6 +65,7 @@ plt.imshow(img)
 plt.show()
 
 ![image](https://user-images.githubusercontent.com/97940146/178469962-e3d839b4-c1d0-4807-8486-b05eefd91eb7.png)
+![image](https://user-images.githubusercontent.com/97940146/178470413-59acca4f-2058-48bc-b532-ddbde9aae67e.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------
 7.Program to display image attributes
