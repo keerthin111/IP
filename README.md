@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt  <br>
 img=mping.imread('butterfly.jpg')  <br>
 plt.imshow(img)  <br>
 
-output: <br>
+output: 
 <matplotlib.image.AxesImage at 0x1ef8305fbe0>
 ![image](https://user-images.githubusercontent.com/97940146/178466748-befa1ba2-7a3a-464c-852a-692573a74175.png)
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -28,7 +28,7 @@ img=img.rotate(180)   <br>
 img.show()   <br>
 cv2.waitKey(0)   <br>
 cv2.destoryAllWindows()  <br>
-output: <br>
+output: 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 4>.Develop a program to convert color string to RGB color value  <br>
@@ -66,6 +66,7 @@ plt.show()
 
 ![image](https://user-images.githubusercontent.com/97940146/178469962-e3d839b4-c1d0-4807-8486-b05eefd91eb7.png)
 ![image](https://user-images.githubusercontent.com/97940146/178470413-59acca4f-2058-48bc-b532-ddbde9aae67e.png)
+![image](https://user-images.githubusercontent.com/97940146/178470716-ebfe263c-4608-4026-8520-7f6156f49491.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------
 7.Program to display image attributes
