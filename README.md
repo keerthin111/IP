@@ -8,7 +8,7 @@ cv2.waitKey(0)   <br>
 cv2.destroyAllWindows()   <br>
 output:  <br>
 ![image](https://user-images.githubusercontent.com/97940146/178465559-246df71d-015a-42c2-8598-462a6982f52e.png)
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
 2>.Develop a program to display image using matplotlib  <br>
 
 import matplotlib.image as mping  <br>
@@ -19,8 +19,33 @@ plt.imshow(img)  <br>
 output: <br>
 <matplotlib.image.AxesImage at 0x1ef8305fbe0>
 ![image](https://user-images.githubusercontent.com/97940146/178466748-befa1ba2-7a3a-464c-852a-692573a74175.png)
+------------------------------------------------------------------------------------------------------------------------------------------------
+3>.Develop a program to perfrorm linear transformation  (i)Rotation: <br>
+from PIL import Image   <br>
+img=Image.open('rose.jpg')   <br>
+img=img.rotate(180)   <br>
+img.show()   <br>
+cv2.waitKey(0)   <br>
+cv2.destoryAllWindows()  <br>
+output: <br>
 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+4>.Develop a program to convert color string to RGB color value  <br>
+from PIL import ImageColor   <br>
+img1=ImageColor.getrgb("yellow")   <br>
+print(img1)   <br>
+img2=ImageColor.getrgb("red")   <br>
+print(img2)   <br>
 
+output:  <br>
+
+(255, 255, 0)  
+(255, 0, 0)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+5>.Write a program to create image using color  <br>
+from PIL import Image  <br>
+img=Image.new('RGB',(200,400),(255,255,0))  <br>
+img.show()  <br>
 
 
 
