@@ -93,7 +93,22 @@ Width: 263  <br>
 Height: 300  <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+8>.<br>
+img=cv2.imread('plant1.jpg') <br>
+cv2.imshow("RGB",img)  <br>
+cv2.waitKey(0)  <br>
+#Gray scale  <br>
+img=cv2.imread('plant1.jpg',0)  <br>
+cv2.imshow("Gray",img)  <br>
+cv2.waitKey()  <br>
+#Binary image  <br>
+ret,bw_img=cv2.threshold(img,127,255,cv2.THRESH_BINARY)  <br>
+cv2.imshow("Binary",bw_img)  <br>
+cv2.waitKey(0)  <br> 
+cv2.destroyAllWindows() <br>
 
+
+------------------------------------------------------------------------------------------------------------------------------------
 14>.program to create an image using 2D array <br>
  import cv2 as c <br>
  import numpy as np <br>
