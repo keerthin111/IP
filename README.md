@@ -47,8 +47,10 @@ output:  <br>
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 5>.Write a program to create image using color  <br>
 from PIL import Image  <br>
-img=Image.new('RGB',(200,400),(255,255,0))  <br>
+img=Image.new('RGB',(300,400),(0,255,0))  <br>
 img.show()  <br>
+ 
+ ![image](https://user-images.githubusercontent.com/97940146/178716729-ec8b09be-9cf2-40ec-b3e4-921c145f214c.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 6.Program to visualize images using varoius volor spaces
