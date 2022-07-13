@@ -171,8 +171,30 @@ image_sharped.show() <br>
 ![image](https://user-images.githubusercontent.com/97940146/176421167-54f456d5-e10b-4b10-bb07-00f1e9efd6e7.png)
 
 18> <br>
+
+19>.<br>
 ![image](https://user-images.githubusercontent.com/97940146/178699921-2689536b-1fdc-416b-99cd-9cdbd4666421.png)
 
 ![image](https://user-images.githubusercontent.com/97940146/178699778-d7b710a9-dfb1-4157-9574-24d6ee081471.png)
 
 ![image](https://user-images.githubusercontent.com/97940146/178700352-44a4c10a-88a5-4ce5-9b2d-1cb5bbb7f633.png)
+
+20>.<br>
+import cv2  <br>
+import numpy as np  <br>
+from matplotlib import pyplot as plt  <br>
+image=cv2.imread('img5.jpg',0)  <br>
+x,y=image.shape  <br>
+z=np.zeros((x,y))  <br>
+for i in range(0,x):  <br>
+    for j in range(0,y):  <br>
+        if(image[i][j]>50 and image[i][j]<150):  <br>
+            z[i][j]=255  <br>
+        else:  <br>
+            z[i][j]=image[i][j]  <br>
+equ=np.hstack((image,z))  <br>
+plt.title('Graylevel slicing with background') <br>
+plt.imshow(equ,'gray')  <br>
+plt.show()  <br>
+
+![image](https://user-images.githubusercontent.com/97940146/178705790-ed2298ef-7564-4f0c-959d-d124121c4307.png)
