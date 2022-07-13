@@ -109,6 +109,7 @@ cv2.destroyAllWindows() <br>
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
+
 14>.program to create an image using 2D array <br>
  import cv2 as c <br>
  import numpy as np <br>
