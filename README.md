@@ -171,4 +171,8 @@ image_sharped.show() <br>
 ![image](https://user-images.githubusercontent.com/97940146/176421167-54f456d5-e10b-4b10-bb07-00f1e9efd6e7.png)
 
 18> <br>
+![image](https://user-images.githubusercontent.com/97940146/178699921-2689536b-1fdc-416b-99cd-9cdbd4666421.png)
 
+![image](https://user-images.githubusercontent.com/97940146/178699778-d7b710a9-dfb1-4157-9574-24d6ee081471.png)
+
+![image](https://user-images.githubusercontent.com/97940146/178700352-44a4c10a-88a5-4ce5-9b2d-1cb5bbb7f633.png)
