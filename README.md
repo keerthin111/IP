@@ -94,7 +94,7 @@ Height: 300  <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-1> <br>
+14>.program to create an image using 2D array <br>
  import cv2 as c <br>
  import numpy as np <br>
  from PIL import Image <br>
@@ -107,7 +107,7 @@ Height: 300  <br>
  c.waitKey(0) <br>
  
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-2><br>
+13><br>
 import cv2 <br>
 img=cv2.imread("D:\plant.jpg") <br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) <br>
