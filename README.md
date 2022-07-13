@@ -88,8 +88,8 @@ Mode: RGB  <br>
 Size: (263, 300)  <br>
 Width: 263  <br>
 Height: 300  <br>
-------------------------------------------------------------------------------------------------------------------------------------------------------
 
+------------------------------------------------------------------------------------------------------------------------------------------------------
 
 1> <br>
  import cv2 as c <br>
@@ -102,7 +102,8 @@ Height: 300  <br>
  img.save('image1.png') <br>
  img.show() <br>
  c.waitKey(0) <br>
--------------------------------------------
+ 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 2><br>
 import cv2 <br>
 img=cv2.imread("D:\plant.jpg") <br>
@@ -121,6 +122,7 @@ cv2.destroyAllWindows() <br>
 OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940146/175283294-6c919061-6bc5-4028-9be5-9e4781eea7bb.png) <br>
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 16> <br>
 #importing laibraries <br>
 import cv2 <br>
@@ -147,6 +149,7 @@ OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940146/176418576-fa96a001-8717-4506-be67-e5a4f099fbec.png)
 ![image](https://user-images.githubusercontent.com/97940146/176418704-2ad4d843-599b-4ea3-87f4-eb27c46e9b17.png)
 
+------------------------------------------------------------------------------------------------------------------------------------------------------
 17> <br>
 from PIL import Image <br>
 from PIL import ImageEnhance <br>
@@ -170,9 +173,38 @@ image_sharped = enh_sha. enhance (sharpness) <br>
 image_sharped.show() <br>
 ![image](https://user-images.githubusercontent.com/97940146/176421167-54f456d5-e10b-4b10-bb07-00f1e9efd6e7.png)
 
-18> <br>
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+ 18>.<br>
+import cv2  <br>
+import numpy as np  <br>
+from matplotlib import pyplot as plt  <br>
+from PIL import Image,ImageEnhance  <br>
+img=cv2.imread('img3.jpg',0) <br>
+ax=plt.subplots(figsize=(20,10))  <br>
+kernel=np.ones((5,5),np.uint8)  <br>
+opening=cv2.morphologyEx(img,cv2.MORPH_OPEN,kernel)  <br>
+closing=cv2.morphologyEx(img,cv2.MORPH_CLOSE,kernel)  <br>
+erosion=cv2.erode(img,kernel,iterations=1)  <br>
+dilation=cv2.dilate(img,kernel,iterations=1) <br>
+gradient=cv2.morphologyEx(img,cv2.MORPH_GRADIENT,kernel) <br>
+plt.subplot(151) <br>
+plt.imshow(opening)  <br>
+plt.subplot(152)  <br>
+plt.imshow(closing)  <br>
+plt.subplot(153)  <br>
+plt.imshow(erosion) <br>
+plt.subplot(154)  <br>
+plt.imshow(dilation)  <br>
+plt.subplot(155)  <br>
+plt.imshow(gradient) <br>
+cv2.waitKey(0) <br>
 
-19>.<br>
+![image](https://user-images.githubusercontent.com/97940146/178708500-3c4036ab-08ff-47c6-941d-e36098335714.png)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+19>.<br
+        
 ![image](https://user-images.githubusercontent.com/97940146/178699921-2689536b-1fdc-416b-99cd-9cdbd4666421.png)
 
 ![image](https://user-images.githubusercontent.com/97940146/178699778-d7b710a9-dfb1-4157-9574-24d6ee081471.png)
@@ -199,6 +231,7 @@ plt.show()  <br>
 
 ![image](https://user-images.githubusercontent.com/97940146/178705790-ed2298ef-7564-4f0c-959d-d124121c4307.png)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------
 21>. <br>
 import cv2 <br>
 import numpy as np <br>
@@ -218,3 +251,5 @@ plt.imshow(equ,'gray')  <br>
 plt.show()  <br>
 
 ![image](https://user-images.githubusercontent.com/97940146/178706595-cb64cb2d-8ef0-4b74-b76e-990883e3fef5.png)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
