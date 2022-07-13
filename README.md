@@ -52,42 +52,42 @@ img.show()  <br>
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 6.Program to visualize images using varoius volor spaces
 
-import cv2
-import matplotlib.pyplot as plt
-import numpy as np
-img=cv2.imread('flower2.webp')
-plt.imshow(img)
-plt.show()
-img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
-plt.imshow(img)
-plt.show()
-img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
-plt.imshow(img)
-plt.show()
+import cv2  <br>
+import matplotlib.pyplot as plt  <br>
+import numpy as np  <br>
+img=cv2.imread('flower2.webp')  <br>
+plt.imshow(img)  <br>
+plt.show()  <br>
+img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB) <br>
+plt.imshow(img)  <br>
+plt.show()  <br>
+img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)  <br>
+plt.imshow(img)  <br>
+plt.show()  <br>
 
 ![image](https://user-images.githubusercontent.com/97940146/178469962-e3d839b4-c1d0-4807-8486-b05eefd91eb7.png)
 ![image](https://user-images.githubusercontent.com/97940146/178470413-59acca4f-2058-48bc-b532-ddbde9aae67e.png)
 ![image](https://user-images.githubusercontent.com/97940146/178470716-ebfe263c-4608-4026-8520-7f6156f49491.png)
 
 -------------------------------------------------------------------------------------------------------------------------------------
-7.Program to display image attributes
+7.Program to display image attributes  <br>
 
-from PIL import Image
-image=Image.open('flower2.webp')
-print("FileName:",image.filename)
-print("Format:",image.format)
-print("Mode:",image.mode)
-print("Size:",image.size)
-print("Width:",image.width)
-print("Height:",image.height)
+from PIL import Image  <br>
+image=Image.open('flower2.webp')  <br>
+print("FileName:",image.filename)  <br>
+print("Format:",image.format)  <br>
+print("Mode:",image.mode)  <br>
+print("Size:",image.size)  <br>
+print("Width:",image.width)  <br>
+print("Height:",image.height)  <br>
 
-OUTPUT:
-FileName: flower2.webp
-Format: WEBP
-Mode: RGB
-Size: (263, 300)
-Width: 263
-Height: 300
+OUTPUT: <br>
+FileName: flower2.webp  <br>
+Format: WEBP  <br>
+Mode: RGB  <br>
+Size: (263, 300)  <br>
+Width: 263  <br>
+Height: 300  <br>
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -198,3 +198,23 @@ plt.imshow(equ,'gray')  <br>
 plt.show()  <br>
 
 ![image](https://user-images.githubusercontent.com/97940146/178705790-ed2298ef-7564-4f0c-959d-d124121c4307.png)
+
+21>. <br>
+import cv2 <br>
+import numpy as np <br>
+from matplotlib import pyplot as plt <br>
+image=cv2.imread('img8.jpg',0) <br>
+x,y=image.shape  <br>
+z=np.zeros((x,y))  <br>
+for i in range(0,x):   <br>
+    for j in range(0,y):  <br>
+        if(image[i][j]>50 and image[i][j]<150):  <br>
+            z[i][j]=255  <br>
+        else:  <br>
+            z[i][j]=0  <br>
+equ=np.hstack((image,z))  <br>
+plt.title('Graylevel slicing with background')  <br>
+plt.imshow(equ,'gray')  <br>
+plt.show()  <br>
+
+![image](https://user-images.githubusercontent.com/97940146/178706595-cb64cb2d-8ef0-4b74-b76e-990883e3fef5.png)
