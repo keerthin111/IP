@@ -109,6 +109,9 @@ cv2.imshow("Binary",bw_img)  <br>
 cv2.waitKey(0)  <br> 
 cv2.destroyAllWindows() <br>
 
+![image](https://user-images.githubusercontent.com/97940146/178968844-94e316f3-c5cc-4875-82a3-5f20c0c6ba56.png)
+![image](https://user-images.githubusercontent.com/97940146/178968979-1edc5543-f4ef-4253-9f10-fdf1f6a843ba.png)
+![image](https://user-images.githubusercontent.com/97940146/178969056-e507642a-96b9-4bba-b239-0f94490652fc.png)
 
 ------------------------------------------------------------------------------------------------------------------------------------
 9>.Resize the original image <br>
