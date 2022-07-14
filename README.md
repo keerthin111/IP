@@ -115,6 +115,21 @@ cv2.destroyAllWindows() <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------
 9>.Resize the original image <br>
+import cv2  <br>
+img=cv2.imread('plant.jpg')  <br>
+print('original image length width',img.shape)  <br>
+cv2.imshow('original image',img)  <br>
+cv2.waitKey(0)  <br>
+#to show the resized image  <br>
+imgresize=cv2.resize(img,(360,270))  <br>
+cv2.imshow('Resized image',imgresize)  <br>
+print('Resized image length width',imgresize.shape)  <br>
+cv2.waitKey(0)  <br>
+output: <br>
+original image length width (1920, 1080, 3) <br>
+Resized image length width (270, 360, 3)
+![image](https://user-images.githubusercontent.com/97940146/178970768-3c20c12e-e79a-4702-a8aa-6d26194c97c8.png)
+![image](https://user-images.githubusercontent.com/97940146/178970871-73ce6563-2cdb-4af5-a7e0-d6fc53299e81.png)
 
 
 14>.program to create an image using 2D array <br>
