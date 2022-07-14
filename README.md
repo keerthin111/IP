@@ -1,13 +1,13 @@
 # Image processing
 
 
-1>. Develop the program to display grayscale image <br>
- <br>
- import cv2   <br>
- img=cv2.imread('butterflypic.jpg',0)   <br>
- cv2.imshow('image',img)   <br>
-cv2.waitKey(0)   <br>
-cv2.destroyAllWindows()   <br>
+   1>. Develop the program to display grayscale image <br>
+ 
+   import cv2   <br>
+   img=cv2.imread('butterflypic.jpg',0)   <br>
+   cv2.imshow('image',img)   <br>
+  cv2.waitKey(0)   <br>
+  cv2.destroyAllWindows()   <br>
 output:  <br>
 ![image](https://user-images.githubusercontent.com/97940146/178465559-246df71d-015a-42c2-8598-462a6982f52e.png)
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -17,9 +17,7 @@ import matplotlib.image as mping  <br>
 import matplotlib.pyplot as plt  <br>
 img=mping.imread('butterfly.jpg')  <br>
 plt.imshow(img)  <br>
-
-output: 
-<matplotlib.image.AxesImage at 0x1ef8305fbe0>
+output:  <br>
 ![image](https://user-images.githubusercontent.com/97940146/178466748-befa1ba2-7a3a-464c-852a-692573a74175.png)
 ------------------------------------------------------------------------------------------------------------------------------------------------
 3>.Develop a program to perfrorm linear transformation  (i)Rotation: <br>
@@ -127,11 +125,12 @@ print('Resized image length width',imgresize.shape)  <br>
 cv2.waitKey(0)  <br>
 output: <br>
 original image length width (1920, 1080, 3) <br>
-Resized image length width (270, 360, 3)
-![image](https://user-images.githubusercontent.com/97940146/178970768-3c20c12e-e79a-4702-a8aa-6d26194c97c8.png)
-![image](https://user-images.githubusercontent.com/97940146/178970871-73ce6563-2cdb-4af5-a7e0-d6fc53299e81.png)
+Resized image length width (270, 360, 3) <br>
 
+![image](https://user-images.githubusercontent.com/97940146/178971396-d01a62e5-0b7b-4e2d-aac2-23b2f1968649.png)
+![image](https://user-images.githubusercontent.com/97940146/178971470-c65b5aae-ca5d-44eb-83b6-76e2852fea8e.png)
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
 14>.program to create an image using 2D array <br>
  import cv2 as c <br>
  import numpy as np <br>
