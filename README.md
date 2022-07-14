@@ -3,9 +3,9 @@
 
 1>. Develop the program to display grayscale image <br>
  <br>
-import cv2   <br>
-img=cv2.imread('butterflypic.jpg',0)   <br>
-cv2.imshow('image',img)   <br>
+ import cv2   <br>
+ img=cv2.imread('butterflypic.jpg',0)   <br>
+ cv2.imshow('image',img)   <br>
 cv2.waitKey(0)   <br>
 cv2.destroyAllWindows()   <br>
 output:  <br>
