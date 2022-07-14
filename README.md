@@ -93,7 +93,9 @@ Width: 263  <br>
 Height: 300  <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
-8>.<br>
+8>. Convert the original image to gray scale and then to binary <br>
+import cv2  <br>
+#read the image file   <br>
 img=cv2.imread('plant1.jpg') <br>
 cv2.imshow("RGB",img)  <br>
 cv2.waitKey(0)  <br>
@@ -109,6 +111,8 @@ cv2.destroyAllWindows() <br>
 
 
 ------------------------------------------------------------------------------------------------------------------------------------
+9>.Resize the original image <br>
+
 
 14>.program to create an image using 2D array <br>
  import cv2 as c <br>
@@ -144,6 +148,7 @@ OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940146/175283294-6c919061-6bc5-4028-9be5-9e4781eea7bb.png) <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 16> <br>
 #importing laibraries <br>
 import cv2 <br>
