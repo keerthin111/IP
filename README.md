@@ -1,6 +1,6 @@
-# Image processing
+ Image processing
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------
    1>. Develop the program to display grayscale image <br>
  
    import cv2   <br>
