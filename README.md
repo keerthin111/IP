@@ -131,6 +131,16 @@ Resized image length width (270, 360, 3) <br>
 ![image](https://user-images.githubusercontent.com/97940146/178971470-c65b5aae-ca5d-44eb-83b6-76e2852fea8e.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+10>.<br>
+from skimage import io <br>
+import matplotlib.pyplot as pltg <br>
+url='https://i.pinimg.com/originals/e6/7d/4e/e67d4e6ca4eb37a50aaed470e7abfb50.jpg' <br>
+image=io.imread(url) <br>
+plt.imshow(image) <br>
+plt.show() <br>
+![image](https://user-images.githubusercontent.com/97940146/180203594-90d2682b-d2b8-48af-be80-1d8982ad8863.png)
+
+----------------------------------------------------------------------------------------------------------------------------------------------
 14>.program to create an image using 2D array <br>
  import cv2 as c <br>
  import numpy as np <br>
