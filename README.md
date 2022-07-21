@@ -349,7 +349,7 @@ import matplotlib.pyplot as plt  <br>
 my_image=Image.open("img5.jpg")  <br>
 #use the sharpen  <br>
 sharp=my_image.filter(ImageFilter.SHARPEN) <br>
-# save the image <br>
+#save the image <br>
 sharp.save("D:/image_sharpen.jpg") <br>
 sharp.show()<br>
 plt.imshow(sharp)<br>
