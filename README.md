@@ -349,7 +349,7 @@ import matplotlib.pyplot as plt  <br>
 my_image=Image.open("img5.jpg")  <br>
 #use the sharpen  <br>
 sharp=my_image.filter(ImageFilter.SHARPEN) <br>
-# SAVE THE IMAGE <br>
+# save the image <br>
 sharp.save("D:/image_sharpen.jpg") <br>
 sharp.show()<br>
 plt.imshow(sharp)<br>
@@ -363,7 +363,7 @@ img=Image.open('img5.jpg')<br>
 plt.imshow(img)<br>
 plt.show() <br>
 #use the flip function <br>
-flip=img.transpose(Image.FLIP_LEFT_RIGHT)<br>
+flip=img.transpose(Image.FLIP_LEFT_RIGHT) <br>
 #save image <br>
 flip.save('D:/image_flip.jpg') <br>
 plt.imshow(flip) <br>
