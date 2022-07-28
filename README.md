@@ -166,7 +166,6 @@ plt.show()<br><br>
 ![image](https://user-images.githubusercontent.com/97940146/181450927-3c5fdf92-e68a-40c9-be4a-2c03223da407.png)
 
 
-
 light_white=(0,0,200)<br><br>
 dark_white=(145,60,255)<br>
 mask_white=cv2.inRange(hsv_img,light_white,dark_white)<br>
@@ -176,6 +175,8 @@ plt.imshow(mask_white,cmap='gray')<br>
 plt.subplot(1,2,2)<br>
 plt.imshow(result_white)<br>
 plt.show()<br>
+![image](https://user-images.githubusercontent.com/97940146/181452859-22935c97-1913-43d5-a1c6-30a7795d9955.png)
+![image](https://user-images.githubusercontent.com/97940146/181452890-9710d549-be6e-4038-8199-0f6423ecc91b.png)
 
 
 final_mask=mask+mask_white<br>
@@ -185,12 +186,17 @@ plt.imshow(final_mask,cmap='gray')<br>
 plt.subplot(1,2,2)<br>
 plt.imshow(final_result)<br>
 plt.show()<br>
+![image](https://user-images.githubusercontent.com/97940146/181453325-65ec8bd3-8ec6-4e84-9340-9e86224aaa53.png)
+![image](https://user-images.githubusercontent.com/97940146/181453364-03d25436-2842-49cc-8813-7ac6d4e6c03e.png)
 
 
 blur=cv2.GaussianBlur(final_result,(7,7),0)<br>
 plt.imshow(blur)<br>
 plt.show()<br>
-<br>
+![image](https://user-images.githubusercontent.com/97940146/181453427-17f6ddbe-fe54-47cd-a1d7-cf911731785e.png)
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------
 14>.program to create an image using 2D array <br>
  import cv2 as c <br>
  import numpy as np <br>
