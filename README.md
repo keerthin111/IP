@@ -141,53 +141,56 @@ plt.show() <br>
 ![image](https://user-images.githubusercontent.com/97940146/180203594-90d2682b-d2b8-48af-be80-1d8982ad8863.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
-11.Write a program to mask and blur the image
+11.Write a program to mask and blur the image<br><br><br>
 
-import cv2
-import matplotlib.image as mpimg
-import matplotlib.pyplot as plt
-img=mpimg.imread("leaf1.jpg")
-plt.imshow(img)
-plt.show()
-
-
-hsv_img=cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
-light_orange=(1,190,200)
-dark_orange=(18,255,255)
-mask=cv2.inRange(hsv_img,light_orange,dark_orange)
-result=cv2.bitwise_and(img,img,mask=mask)
-plt.subplot(1,2,1)
-plt.imshow(mask,cmap='gray')
-plt.subplot(1,2,2)
-plt.imshow(result)
-plt.show()
+import cv2<br><br><br>
+import matplotlib.image as mpimg<br><br><br>
+import matplotlib.pyplot as plt<br><br><br>
+img=mpimg.imread("leaf1.jpg")<br><br><br>
+plt.imshow(img)<br><br><br>
+plt.show()<br><br><br>
+![image](https://user-images.githubusercontent.com/97940146/181450717-46c4cab4-ec6e-45ab-9fb7-deee37320121.png)
 
 
-
-light_white=(0,0,200)
-dark_white=(145,60,255)
-mask_white=cv2.inRange(hsv_img,light_white,dark_white)
-result_white=cv2.bitwise_and(img,img,mask=mask_white)
-plt.subplot(1,2,1)
-plt.imshow(mask_white,cmap='gray')
-plt.subplot(1,2,2)
-plt.imshow(result_white)
-plt.show()
-
-
-final_mask=mask+mask_white
-final_result=cv2.bitwise_and(img,img,mask=final_mask)
-plt.subplot(1,2,1)
-plt.imshow(final_mask,cmap='gray')
-plt.subplot(1,2,2)
-plt.imshow(final_result)
-plt.show()
+hsv_img=cv2.cvtColor(img, cv2.COLOR_RGB2HSV)<br><br><br>
+light_orange=(1,190,200)<br><br><br>
+dark_orange=(18,255,255)<br><br><br>
+mask=cv2.inRange(hsv_img,light_orange,dark_orange)<br><br><br>
+result=cv2.bitwise_and(img,img,mask=mask)<br><br>
+plt.subplot(1,2,1)<br><br>
+plt.imshow(mask,cmap='gray')<br><br>
+plt.subplot(1,2,2)<br><br>
+plt.imshow(result)<br><br>
+plt.show()<br><br>
+![image](https://user-images.githubusercontent.com/97940146/181450878-e326839f-275b-4e45-9029-f8a113d9c927.png)
+![image](https://user-images.githubusercontent.com/97940146/181450927-3c5fdf92-e68a-40c9-be4a-2c03223da407.png)
 
 
-blur=cv2.GaussianBlur(final_result,(7,7),0)
-plt.imshow(blur)
-plt.show()
 
+light_white=(0,0,200)<br><br>
+dark_white=(145,60,255)<br>
+mask_white=cv2.inRange(hsv_img,light_white,dark_white)<br>
+result_white=cv2.bitwise_and(img,img,mask=mask_white)<br>
+plt.subplot(1,2,1)<br>
+plt.imshow(mask_white,cmap='gray')<br>
+plt.subplot(1,2,2)<br>
+plt.imshow(result_white)<br>
+plt.show()<br>
+
+
+final_mask=mask+mask_white<br>
+final_result=cv2.bitwise_and(img,img,mask=final_mask)<br>
+plt.subplot(1,2,1)<br>
+plt.imshow(final_mask,cmap='gray')<br>
+plt.subplot(1,2,2)<br>
+plt.imshow(final_result)<br>
+plt.show()<br>
+
+
+blur=cv2.GaussianBlur(final_result,(7,7),0)<br>
+plt.imshow(blur)<br>
+plt.show()<br>
+<br>
 14>.program to create an image using 2D array <br>
  import cv2 as c <br>
  import numpy as np <br>
