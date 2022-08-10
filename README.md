@@ -197,19 +197,19 @@ plt.show()<br>
 ---------------------------------------------------------------------------------------------------------------------------------------
 12>.Write a program to perform arithmatic operation on images<br>
 
-import cv2<br><br>
-import matplotlib.image as mpimg<br><br>
-import matplotlib.pyplot as plt<br><br>
-img1=cv2.imread('flower3.jpg')<br><br>
-img2=cv2.imread('leaf1.jpg')<br><br>
-fimg1=img1+img2<br><br>
-plt.imshow(fimg1)<br><br>
-plt.show()<br><br>
-cv2.imwrite('output.jpg',fimg1)<br><br>
-fimg2=img1-img2<br><br>
-plt.imshow(fimg2)<br><br>
-plt.show()<br><br>
-cv2.imwrite('output.jpg',fimg2)<br><br>
+import cv2<br>
+import matplotlib.image as mpimg<br>
+import matplotlib.pyplot as plt<br>
+img1=cv2.imread('flower3.jpg')<br>
+img2=cv2.imread('leaf1.jpg')<br>
+fimg1=img1+img2<br>
+plt.imshow(fimg1)<br>
+plt.show()<br>
+cv2.imwrite('output.jpg',fimg1)<br>
+fimg2=img1-img2<br>
+plt.imshow(fimg2)<br>
+plt.show()<br>
+cv2.imwrite('output.jpg',fimg2)<br>
 fimg3=img1*img2<br>
 plt.imshow(fimg3)<br>
 plt.show()<br>
