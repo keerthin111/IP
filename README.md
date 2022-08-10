@@ -191,16 +191,43 @@ plt.show()<br>
 
 
 blur=cv2.GaussianBlur(final_result,(7,7),0)<br>
-plt.imshow(blur)<br>
+plt.imshow(blur)<br><br>
 plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940146/181453427-17f6ddbe-fe54-47cd-a1d7-cf911731785e.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 12>.Write a program to perform arithmatic operation on images<br>
 
+import cv2<br><br>
+import matplotlib.image as mpimg<br><br>
+import matplotlib.pyplot as plt<br><br>
+img1=cv2.imread('flower3.jpg')<br><br>
+img2=cv2.imread('leaf1.jpg')<br><br>
+fimg1=img1+img2<br><br>
+plt.imshow(fimg1)<br><br>
+plt.show()<br><br>
+cv2.imwrite('output.jpg',fimg1)<br><br>
+fimg2=img1-img2<br><br>
+plt.imshow(fimg2)<br><br>
+plt.show()<br><br>
+cv2.imwrite('output.jpg',fimg2)<br><br>
+fimg3=img1*img2<br>
+plt.imshow(fimg3)<br>
+plt.show()<br>
+cv2.imwrite('output.jpg',fimg3)<br>
+fimg4=img1/img2<br>
+plt.imshow(fimg4)<br>
+plt.show()<br>
+cv2.imwrite('output.jpg',fimg4)<br>
+
+![image](https://user-images.githubusercontent.com/97940146/183873587-ed487eaa-b493-4f42-b733-1e69ba0d8ba1.png)
+![image](https://user-images.githubusercontent.com/97940146/183873701-86920cde-cb93-4d45-9fe7-ffbbcc5800f8.png)
+![image](https://user-images.githubusercontent.com/97940146/183873766-9c5b9cbb-b10c-4e21-8dfd-b0a574f3a90b.png)
+![image](https://user-images.githubusercontent.com/97940146/183873901-925fa805-9b8a-406e-aa62-dcaf3daf85ad.png)
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
- 13>.<br>
+ 13>. Develop the program to change the image to different color spaces<br>
 import cv2 <br>
 img=cv2.imread("D:\plant.jpg") <br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) <br>
@@ -258,10 +285,6 @@ cv2.waitKey(0)<br>
 
 OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940146/183869462-ba5d19b7-6738-4017-9280-096a08709503.png)
-![image](https://user-images.githubusercontent.com/97940146/183869500-339c8853-705d-492d-8ab8-0f482651e6d1.png)
-![image](https://user-images.githubusercontent.com/97940146/183869541-a8c6897f-4f39-42af-8dc4-760c692c5239.png)
-![image](https://user-images.githubusercontent.com/97940146/183869581-7422baed-d073-4311-81b7-6ef7cc41b7fa.png)
-![image](https://user-images.githubusercontent.com/97940146/183869613-05813f17-e87d-4c76-b879-085bd83e7669.png)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
