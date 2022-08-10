@@ -141,32 +141,32 @@ plt.show() <br>
 ![image](https://user-images.githubusercontent.com/97940146/180203594-90d2682b-d2b8-48af-be80-1d8982ad8863.png)
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
-11.Write a program to mask and blur the image<br><br><br>
+11.Write a program to mask and blur the image<br>
 
-import cv2<br><br><br>
-import matplotlib.image as mpimg<br><br><br>
-import matplotlib.pyplot as plt<br><br><br>
-img=mpimg.imread("leaf1.jpg")<br><br><br>
-plt.imshow(img)<br><br><br>
-plt.show()<br><br><br>
+import cv2<br>
+import matplotlib.image as mpimg<br>
+import matplotlib.pyplot as plt<br>
+img=mpimg.imread("leaf1.jpg")<br>
+plt.imshow(img)<br>
+plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940146/181450717-46c4cab4-ec6e-45ab-9fb7-deee37320121.png)
 
 
-hsv_img=cv2.cvtColor(img, cv2.COLOR_RGB2HSV)<br><br><br>
-light_orange=(1,190,200)<br><br><br>
-dark_orange=(18,255,255)<br><br><br>
-mask=cv2.inRange(hsv_img,light_orange,dark_orange)<br><br><br>
-result=cv2.bitwise_and(img,img,mask=mask)<br><br>
+hsv_img=cv2.cvtColor(img, cv2.COLOR_RGB2HSV)<br>
+light_orange=(1,190,200)<br>
+dark_orange=(18,255,255)<br>
+mask=cv2.inRange(hsv_img,light_orange,dark_orange)<br>
+result=cv2.bitwise_and(img,img,mask=mask)<br>
 plt.subplot(1,2,1)<br><br>
-plt.imshow(mask,cmap='gray')<br><br>
-plt.subplot(1,2,2)<br><br>
-plt.imshow(result)<br><br>
-plt.show()<br><br>
+plt.imshow(mask,cmap='gray')<br>
+plt.subplot(1,2,2)<br>
+plt.imshow(result)<br>
+plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940146/181450878-e326839f-275b-4e45-9029-f8a113d9c927.png)
 ![image](https://user-images.githubusercontent.com/97940146/181450927-3c5fdf92-e68a-40c9-be4a-2c03223da407.png)
 
 
-light_white=(0,0,200)<br><br>
+light_white=(0,0,200)<br>
 dark_white=(145,60,255)<br>
 mask_white=cv2.inRange(hsv_img,light_white,dark_white)<br>
 result_white=cv2.bitwise_and(img,img,mask=mask_white)<br>
@@ -196,9 +196,31 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940146/181453427-17f6ddbe-fe54-47cd-a1d7-cf911731785e.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-12>.Write a program to perform arithmatic operation on images
+12>.Write a program to perform arithmatic operation on images<br><br>
+import cv2<br><br>
+import matplotlib.pyplot as plt <br><br>
+image1=cv2.imread('img2.jpg')<br><br>
+image2=cv2.imread('img2.jpg')<br><br>
+ax=plt.subplots(figsize=(15,10))<br><br>
+bitwiseAnd=cv2.bitwise_and(image1,image2)<br><br>
+bitwiseOr=cv2.bitwise_or(image1,image2)<br><br>
+bitwiseXor=cv2.bitwise_xor(image1,image2)<br><br>
+bitwiseNot_img1=cv2.bitwise_not(image1)<br><br>
+bitwiseNot_img2=cv2.bitwise_not(image2)<br><br>
+plt.subplot(151)<br><br>
+plt.imshow(bitwiseAnd)<br><br>
+plt.subplot(152)<br><br>
+plt.imshow(bitwiseOr)<br>
+plt.subplot(153)<br>
+plt.imshow(bitwiseXor)<br>
+plt.subplot(154)<br>
+plt.imshow(bitwiseNot_img1)<br>
+plt.subplot(155)<br>
+plt.imshow(bitwiseNot_img2)<br>
+cv2.waitKey(0)<br>
 
  
+![image](https://user-images.githubusercontent.com/97940146/183867903-6434d195-50ff-41bc-bed5-3c309bc5dab9.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
  13>.<br>
