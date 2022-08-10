@@ -197,28 +197,11 @@ plt.show()<br>
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 12>.Write a program to perform arithmatic operation on images
+
  
- 
- --------------------------------------------------------------------------------------------------------------------------------------
- 13>.
- ![image](https://user-images.githubusercontent.com/97940146/175283294-6c919061-6bc5-4028-9be5-9e4781eea7bb.png) <br>
-----------------------------------------------------------------------------------------------------------------------------------------
-14>.program to create an image using 2D array <br>
- import cv2 as c <br>
- import numpy as np <br>
- from PIL import Image <br>
- array=np.zeros([100,200,3],dtype=np.uint8) <br>
-  array[:,:100]=[255,130,0] <br>
- array[:,100:]=[0,0,255] <br>
- img=Image.fromarray(array) <br>
- img.save('image1.png') <br>
- img.show() <br>
- c.waitKey(0) <br>
- 
- ![image](https://user-images.githubusercontent.com/97940146/178718467-3d023451-db44-4aa5-884d-08935213ceb3.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-13><br>
+ 13>.<br>
 import cv2 <br>
 img=cv2.imread("D:\plant.jpg") <br>
 gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) <br>
@@ -237,7 +220,25 @@ OUTPUT: <br>
 ![image](https://user-images.githubusercontent.com/97940146/175283294-6c919061-6bc5-4028-9be5-9e4781eea7bb.png) <br>
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+14>.program to create an image using 2D array<br>
+import cv2 as c<br>
+import numpy as np<br>
+from PIL import Image<br>
+array=np.zeros([100,200,3],dtype=np.uint8)<br>
+array[:,:100]=[255,130,0]<br>
+array[:,100:]=[0,0,255]<br>
+img=Image.fromarray(array)<br>
+img.save('image1.png')<br>
+img.show()<br>
+c.waitKey(0)<br>
 
+![image](https://user-images.githubusercontent.com/97940146/178718467-3d023451-db44-4aa5-884d-08935213ceb3.png)
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+15>.
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 16> <br>
 #importing laibraries <br>
 import cv2 <br>
