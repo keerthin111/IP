@@ -196,31 +196,8 @@ plt.show()<br>
 ![image](https://user-images.githubusercontent.com/97940146/181453427-17f6ddbe-fe54-47cd-a1d7-cf911731785e.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-12>.Write a program to perform arithmatic operation on images<br><br>
-import cv2<br><br>
-import matplotlib.pyplot as plt <br><br>
-image1=cv2.imread('img2.jpg')<br><br>
-image2=cv2.imread('img2.jpg')<br><br>
-ax=plt.subplots(figsize=(15,10))<br><br>
-bitwiseAnd=cv2.bitwise_and(image1,image2)<br><br>
-bitwiseOr=cv2.bitwise_or(image1,image2)<br><br>
-bitwiseXor=cv2.bitwise_xor(image1,image2)<br><br>
-bitwiseNot_img1=cv2.bitwise_not(image1)<br><br>
-bitwiseNot_img2=cv2.bitwise_not(image2)<br><br>
-plt.subplot(151)<br><br>
-plt.imshow(bitwiseAnd)<br><br>
-plt.subplot(152)<br><br>
-plt.imshow(bitwiseOr)<br>
-plt.subplot(153)<br>
-plt.imshow(bitwiseXor)<br>
-plt.subplot(154)<br>
-plt.imshow(bitwiseNot_img1)<br>
-plt.subplot(155)<br>
-plt.imshow(bitwiseNot_img2)<br>
-cv2.waitKey(0)<br>
+12>.Write a program to perform arithmatic operation on images<br>
 
- 
-![image](https://user-images.githubusercontent.com/97940146/183867903-6434d195-50ff-41bc-bed5-3c309bc5dab9.png)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
  13>.<br>
@@ -257,7 +234,22 @@ c.waitKey(0)<br>
 ![image](https://user-images.githubusercontent.com/97940146/178718467-3d023451-db44-4aa5-884d-08935213ceb3.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 15>.
-
+import cv2 <br>
+img=cv2.imread("D:\plant.jpg") <br>
+gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) <br>
+hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV) <br>
+lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB) <br>
+hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS) <br>
+yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV) <br>
+cv2.imshow("GRAY image",gray) <br>
+cv2.imshow("HSV image",hsv) <br>
+cv2.imshow("LAB image",lab) <br>
+cv2.imshow("HLS image",hls) <br>
+cv2.imshow("YUV image",yuv) <br>
+cv2.waitKey(0) <br>
+cv2.destroyAllWindows() <br>
+OUTPUT: <br>
+![image](https://user-images.githubusercontent.com/97940146/175283294-6c919061-6bc5-4028-9be5-9e4781eea7bb.png)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
