@@ -233,23 +233,35 @@ c.waitKey(0)<br>
 
 ![image](https://user-images.githubusercontent.com/97940146/178718467-3d023451-db44-4aa5-884d-08935213ceb3.png)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-15>.
-import cv2 <br>
-img=cv2.imread("D:\plant.jpg") <br>
-gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) <br>
-hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV) <br>
-lab=cv2.cvtColor(img,cv2.COLOR_BGR2LAB) <br>
-hls=cv2.cvtColor(img,cv2.COLOR_BGR2HLS) <br>
-yuv=cv2.cvtColor(img,cv2.COLOR_BGR2YUV) <br>
-cv2.imshow("GRAY image",gray) <br>
-cv2.imshow("HSV image",hsv) <br>
-cv2.imshow("LAB image",lab) <br>
-cv2.imshow("HLS image",hls) <br>
-cv2.imshow("YUV image",yuv) <br>
-cv2.waitKey(0) <br>
-cv2.destroyAllWindows() <br>
+15>.<br>
+import cv2<br>
+import matplotlib.pyplot as plt <br>
+image1=cv2.imread('img2.jpg')<br>
+image2=cv2.imread('img2.jpg')<br>
+ax=plt.subplots(figsize=(15,10))<br>
+bitwiseAnd=cv2.bitwise_and(image1,image2)<br>
+bitwiseOr=cv2.bitwise_or(image1,image2)<br>
+bitwiseXor=cv2.bitwise_xor(image1,image2)<br>
+bitwiseNot_img1=cv2.bitwise_not(image1)<br>
+bitwiseNot_img2=cv2.bitwise_not(image2)<br>
+plt.subplot(151)<br>
+plt.imshow(bitwiseAnd)<br>
+plt.subplot(152)<br>
+plt.imshow(bitwiseOr)<br>
+plt.subplot(153)<br>
+plt.imshow(bitwiseXor)<br>
+plt.subplot(154)<br>
+plt.imshow(bitwiseNot_img1)<br>
+plt.subplot(155)<br>
+plt.imshow(bitwiseNot_img2)<br>
+cv2.waitKey(0)<br>
+
 OUTPUT: <br>
-![image](https://user-images.githubusercontent.com/97940146/175283294-6c919061-6bc5-4028-9be5-9e4781eea7bb.png)
+![image](https://user-images.githubusercontent.com/97940146/183869462-ba5d19b7-6738-4017-9280-096a08709503.png)
+![image](https://user-images.githubusercontent.com/97940146/183869500-339c8853-705d-492d-8ab8-0f482651e6d1.png)
+![image](https://user-images.githubusercontent.com/97940146/183869541-a8c6897f-4f39-42af-8dc4-760c692c5239.png)
+![image](https://user-images.githubusercontent.com/97940146/183869581-7422baed-d073-4311-81b7-6ef7cc41b7fa.png)
+![image](https://user-images.githubusercontent.com/97940146/183869613-05813f17-e87d-4c76-b879-085bd83e7669.png)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
