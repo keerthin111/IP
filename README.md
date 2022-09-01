@@ -587,3 +587,24 @@ plt.show() <br>
 
 ![image](https://user-images.githubusercontent.com/97940146/187893404-c6728c4e-07a3-4a4b-861c-51f6af116f06.png)
 
+                #Edge detection using Prewitt operator
+                import cv2
+                import numpy as np
+                from matplotlib import pyplot as plt
+                img =cv2.imread('shapes.jpg')
+                gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
+                img_gaussian = cv2.GaussianBlur (gray, (3,3),0)
+
+                #prewitt
+                kernelx = np.array([[1,1,1], [0,0,0],[-1,-1,-1]]) 
+                kernely = np.array([[-1,0,1],[-1,0,1],[-1,0,1]])
+                img_prewittx = cv2.filter2D(img_gaussian, -1, kernelx) 
+                img_prewitty =cv2.filter2D(img_gaussian, -1, kernely)
+                cv2.imshow("Original Image", img)
+                cv2.imshow("Prewitt x", img_prewittx)
+                cv2.imshow("Prewitt y", img_prewitty)
+                cv2.imshow("Prewitt", img_prewittx + img_prewitty)
+                cv2.waitKey()
+                cv2.destroyAllWindows()
+![image](https://user-images.githubusercontent.com/97940146/187899417-f6efa121-8447-402f-82a6-2dfee0e20c35.png)
+
