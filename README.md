@@ -501,93 +501,93 @@ im=Image.open('img5.jpg') <br>
 width,height=im.size <br>
 im1=im.crop((280,100,800,600)) <br>
 im1.show() <br>
-plt.imshow(im1) <br>
+plt.imshow(im1) <br><br>
 plt.show() <br>
 ![image](https://user-images.githubusercontent.com/97940146/179960871-dd471008-eb99-4ea2-86dc-69dd393728bd.png)
 
 ---------------------------------------------------------------------------------
-26>.Implement a program to perform various edge detection techniques
-a) Canny Edge detection
-#canny edge detection
-import cv2
-import numpy as np
-import matplotlib.pyplot as plt
-plt.style.use('seaborn')
+26>.Implement a program to perform various edge detection techniques<br><br>
+a) Canny Edge detection<br><br>
+#canny edge detection<br><br>
+import cv2<br><br>
+import numpy as np<br><br>
+import matplotlib.pyplot as plt<br><br>
+plt.style.use('seaborn')<br><br>
 
-loaded_image = cv2.imread("shapes.jpg") 
-loaded_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2RGB)
+loaded_image = cv2.imread("shapes.jpg") <br><br>
+loaded_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2RGB)<br><br>
 
-gray_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2GRAY)
+gray_image = cv2.cvtColor(loaded_image,cv2.COLOR_BGR2GRAY)<br><br>
 
-edged_image = cv2.Canny(gray_image, threshold1=30, threshold2=100)
+edged_image = cv2.Canny(gray_image, threshold1=30, threshold2=100)<br><br>
 
-plt.figure(figsize=(20,20))
-plt.subplot(1,3,1)
-plt.imshow(loaded_image,cmap="gray")
-plt.title("original Image")
-plt.axis("off")
-plt.subplot(1,3,2)
-plt.imshow(gray_image, cmap="gray")
-plt.axis("off")
-plt.title("GrayScale Image")
-plt.subplot(1,3,3) 
-plt.imshow(edged_image,cmap="gray")
-plt.axis("off")
-plt.title("Canny Edge Detected Image")
-plt.show()
+plt.figure(figsize=(20,20))<br><br>
+plt.subplot(1,3,1)<br><br>
+plt.imshow(loaded_image,cmap="gray")<br><br>
+plt.title("original Image")<br><br>
+plt.axis("off")<br><br>
+plt.subplot(1,3,2)<br><br>
+plt.imshow(gray_image, cmap="gray")<br><br>
+plt.axis("off")<br><br>
+plt.title("GrayScale Image")<br><br>
+plt.subplot(1,3,3) <br><br>
+plt.imshow(edged_image,cmap="gray")<br><br>
+plt.axis("off")<br><br>
+plt.title("Canny Edge Detected Image")<br><br>
+plt.show()<br><br>
 
-![image](https://user-images.githubusercontent.com/97940146/187893093-28394195-b079-4cc6-9015-8951417dc553.png)
+![image](https://user-images.githubusercontent.com/97940146/187893093-28394195-b079-4cc6-9015-8951417dc553.png)<br>
 
-#Laplacian and Sobel Edge detecting methods
-import cv2
-import numpy as np
-from matplotlib import pyplot as plt
+#Laplacian and Sobel Edge detecting methods<br>
+import cv2<br>
+import numpy as np<br>
+from matplotlib import pyplot as plt<br>
 
-#Loading image
-#imge = cv2.imread("SanFrancisco.jpg',) 
-imge = cv2.imread('shapes.jpg',)
+#Loading image<br>
+#imge = cv2.imread("SanFrancisco.jpg',) <br>
+imge = cv2.imread('shapes.jpg',)<br>
 
-#converting to gray scale
-gray = cv2.cvtColor(imge, cv2.COLOR_BGR2GRAY)
+#converting to gray scale<br>
+gray = cv2.cvtColor(imge, cv2.COLOR_BGR2GRAY)<br>
+    # remove noise<br>
+img = cv2.GaussianBlur (gray, (3,3),0)<br>
 
-# remove noise
-img = cv2.GaussianBlur (gray, (3,3),0)
-
-# convolute with proper kernels
-laplacian= cv2.Laplacian(img,cv2.CV_64F) 
-sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5) #x
-sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5) #y
+     # convolute with proper kernels<br>
+laplacian= cv2.Laplacian(img,cv2.CV_64F) <br>
+sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5) #x<br>
+sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5) #y<br>
 plt.subplot(2,2,1), plt.imshow(img,cmap = 'gray')
-plt.title("original"), plt.xticks([]), plt.yticks([])
-plt.subplot(2,2,2), plt.imshow(laplacian, cmap = 'gray') 
-plt.title('Laplacian'), plt.xticks([]), plt.yticks([])
-plt.subplot(2,2,3), plt.imshow(sobelx,cmap = 'gray')
+plt.title("original"), plt.xticks([]), plt.yticks([])<br>
+plt.subplot(2,2,2), plt.imshow(laplacian, cmap = 'gray') <br>
+plt.title('Laplacian'), plt.xticks([]), plt.yticks([])<br>
+plt.subplot(2,2,3), plt.imshow(sobelx,cmap = 'gray')<br>
 plt.title('Sobel x'), plt.xticks([]), plt.yticks([])
 plt.subplot(2,2,4), plt.imshow(sobely,cmap = 'gray') 
 plt.title('Sobel Y'), plt.xticks([]), plt.yticks([])
 plt.show()
 
-![image](https://user-images.githubusercontent.com/97940146/187893187-a2e7c1e59898-41e4-8f94-8c8e4310e7a0.png)
+![image](https://user-images.githubusercontent.com/97940146/187893795-246bf6c3-2515-4bde-a6b0-e1717db595c3.png)
 
-#Edge detection using Prewitt operator
-import cv2
-import numpy as np
-from matplotlib import pyplot as plt
-img =cv2.imread('shapes.jpg')
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
-img_gaussian = cv2.GaussianBlur (gray, (3,3),0)
 
-#prewitt
-kernelx = np.array([[1,1,1], [0,0,0],[-1,-1,-1]]) 
-kernely = np.array([[-1,0,1],[-1,0,1],[-1,0,1]])
-img_prewittx = cv2.filter2D(img_gaussian, -1, kernelx) 
-img_prewitty =cv2.filter2D(img_gaussian, -1, kernely)
-cv2.imshow("Original Image", img)
-cv2.imshow("Prewitt x", img_prewittx)
-cv2.imshow("Prewitt y", img_prewitty)
-cv2.imshow("Prewitt", img_prewittx + img_prewitty)
-cv2.waitKey()
-cv2.destroyAllWindows()
+               #Edge detection using Prewitt operator
+               import cv2
+               import numpy as np
+               from matplotlib import pyplot as plt
+               img =cv2.imread('shapes.jpg')
+               gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) 
+               img_gaussian = cv2.GaussianBlur (gray, (3,3),0)
+
+               #prewitt
+               kernelx = np.array([[1,1,1], [0,0,0],[-1,-1,-1]]) 
+               kernely = np.array([[-1,0,1],[-1,0,1],[-1,0,1]])
+               img_prewittx = cv2.filter2D(img_gaussian, -1, kernelx) 
+               img_prewitty =cv2.filter2D(img_gaussian, -1, kernely)
+               cv2.imshow("Original Image", img)
+               cv2.imshow("Prewitt x", img_prewittx)
+               cv2.imshow("Prewitt y", img_prewitty)
+               cv2.imshow("Prewitt", img_prewittx + img_prewitty)
+               cv2.waitKey()
+               cv2.destroyAllWindows()
 
 ![image](https://user-images.githubusercontent.com/97940146/187893404-c6728c4e-07a3-4a4b-861c-51f6af116f06.png)
 
